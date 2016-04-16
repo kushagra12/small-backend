@@ -1,0 +1,884 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CODEPLAY - 2016</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta description=" Real solutions to the challenges and
+            opportunities we are really facing together. 24 hours dedicated to bringing a
+            smile to someone. With the alteration of our concepts of
+            time and space, the changes in how we do business, talk to each other,
+            participate in government, organize our workplaces and conduct our schooling,
+            at breakneck speed, it feels like we have little control over the direction or
+            impact of these changes on our communities. 
+            This 23rd - 24th April, we invite you to Codeplay 2016." />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" type="image/x-icon" href="public/media/cp.ico"/>
+  <!--fonts-->
+  <link href="public/fonts/fonts.css" rel="stylesheet" type="text/css">
+
+  <link href="public/scripts/lib/owl-carousel/owl.carousel.css" rel="stylesheet">
+  <link href="public/scripts/lib/timeliner/timeliner.css" rel="stylesheet">
+  <!-- inject:css -->
+  <link href="public/scripts/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="public/scripts/lib/animate.css/animate.min.css" rel="stylesheet" type="text/css">
+  <link href="public/scripts/lib/font-awesome/css/font-awesome.css" rel="stylesheet">
+  <link href="public/scripts/lib/normalize-css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="public/scripts/lib/toastr/toastr.min.css" rel="stylesheet" type="text/css">
+  <!-- endinject -->
+
+  <link href="public/stylesheets/main.css" rel="stylesheet" type="text/css">
+  <script src="public/scripts/lib/tweenmax/TweenMax.min.js"></script>
+</head>
+<body>
+
+  <!-- The overlay -->
+<div id="myNav" class="overlay">
+
+ <!-- Button to close the overlay navigation -->
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+ <!-- Overlay content -->
+ <div class="overlay-content">
+   <a href="#main" onclick="closeNav()">Home</a>
+   <a href="#about" onclick="closeNav()">About</a>
+   <a href="#communities" onclick="closeNav()">Problem Statements</a>
+   <a href="#schedule" onclick="closeNav()">Schedule</a>
+   <a href="#register" onclick="closeNav()">Register</a>
+ </div>
+</div>
+
+
+
+
+  <header>
+    <div class="moving_humanity hidden-xs">
+      <h4>moving humanity</h4>
+    </div>
+    <div class="menu" onclick="openNav()"><span class="bracket">[</span>menu<span class="bracket">]</span></div>
+    <div class="social">
+      <a href="https://twitter.com/csivitu" target="blank" class="social_links">
+        <i class="fa fa-twitter-square"></i>
+      </a>
+      <a href="https://www.facebook.com/csicodeplay/" target="blank" class="social_links">
+        <i class="fa fa-facebook-square"></i>
+      </a>
+      <a href="https://www.instagram.com/csivitu" target="blank" class="social_links">
+        <i class="fa fa-instagram"></i>
+      </a>
+    </div>
+
+      <div class="music equalizer" id="mute">
+        <span class="equalizer-item bar-1"></span>
+        <span class="equalizer-item bar-2"></span>
+        <span class="equalizer-item bar-3"></span>
+        <span class="equalizer-item bar-4"></span>
+      </div>
+
+  </header>
+  <audio id="bg_music" loop="true" autoplay="false">
+    <source  type="audio/mpeg" src="public/media/updn.mp3">
+  </audio>
+  
+
+  <div id="background">
+    <svg id="Layer_7" data-name="Layer 7" xmlns="http://www.w3.org/2000/svg" width="872" height="872" viewBox="0 0 872 872">
+      <defs>
+        <style>
+          .cls-1 {
+            fill: #ffccb0;
+          }
+
+          .cls-2, .cls-3 {
+            fill: none;
+            stroke: #fff;
+            stroke-miterlimit: 10;
+          }
+
+          .cls-2 {
+            stroke-width: 0.7px;
+          }
+
+          .cls-3 {
+            stroke-width: 0.5px;
+          }
+        </style>
+      </defs>
+
+      <circle class="cls-1" cx="436" cy="436" r="436"/>
+      <rect class="cls-2 svg_rotate" x="2376" y="377" width="326" height="326" transform="translate(-977.51 -1741.18) rotate(45)"/>
+      <rect class="cls-3" x="2234" y="235" width="610" height="610" transform="translate(-1741.18 1849.51) rotate(-45)"/>
+      <rect class="cls-3" x="2234" y="235" width="610" height="610" transform="translate(-1210.11 2443.1) rotate(-62.65)"/>
+      <rect class="cls-3" x="131" y="131" width="610" height="610"/>
+      <rect class="cls-3" x="2234" y="235" width="610" height="610" transform="translate(884.16 2992.81) rotate(-111.95)"/>
+      <rect class="cls-3" x="2234" y="235" width="610" height="610" transform="translate(-1468.68 2199.61) rotate(-54.8)"/>
+      <rect class="cls-3" x="2234" y="235" width="610" height="610" transform="translate(-1042.73 2569.42) rotate(-67.28)"/>
+    </svg>
+
+  </div>
+
+  <section id="main">
+    <div class="container breathe">
+      <div class="row place-top">
+        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-6 col-xs-offset-1 col-lg-offset-0 pull-right align-center logo">
+          <img class="img-responsive" src="public/media/cp_web_logo.png" alt="Codeplay">
+        </div>
+      </div>
+      <div class="row place-bottom">
+        <div class="col-xs-10 col-sm-8 col-md-8 col-lg-6 col-xs-offset-1 col-lg-offset-0 pull-left title">
+          <p>
+            There is<br/>
+            a better way<br/>
+            &nbsp;&nbsp;forward
+          </p>
+          <div class="hyphen"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container breathe">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 text-center about_text">
+          <h3>
+            <b>Real solutions</b> to the challenges and
+            opportunities we are really facing together. <b>24 hours</b> dedicated to bringing a
+            smile to someone. With the alteration of our concepts of
+            time and space, the changes in how we do business, talk to each other,
+            participate in government, organize our workplaces and conduct our schooling,
+            at breakneck speed, it feels like we have little control over the direction or
+            impact of these changes on our communities. <br>
+            This <b> 23rd - 24th April</b>, we invite you -
+          </h3>
+          <span class="lineheight"></span>
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 text-left">
+              <strong>
+                <span class="strike">DESIGNERS</span> /
+                <span class="strike">DEVELOPERS</span> /
+                <br>
+                <br>
+                <span class="lineheight"></span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="strike">ENTREPRENEURS</span> /
+                <span class="strike">TECH-ENTHUSIASTS</span> /
+                <br>
+                <br>
+                <span class="lineheight"></span>
+                &nbsp;
+                <span class="strike">THINKERS</span> /
+                <span class="strike">DOERS</span> /
+                <span class="strike">BELIEVERS</span> /
+              </strong>
+            </div>
+          </div>
+          <span class="lineheight"></span>
+          <br>
+          <br>
+          <p>
+            Join us, the <b>Computer Society of India - VIT University Student Branch</b> as we provide you with
+            a platform which enables your geniuses
+            to reach out to certain communities which suffer from lack of even the basic amenities.<br />
+            <b>Here we make  technology meet creativity to build for a change.</b>
+          </p>
+          <br>
+          <br>
+          <h4>You can download the detailed information about the event here - </h4>
+          <br>
+            <a href="codeplay_movinghumanity.pdf"> <button>Codeplay Brochure</button> </a>
+          <br>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="communities">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1">
+        <h3>
+          Our Target <br>
+           &nbsp;&nbsp;Communities
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xs-offset-1">
+          <div class="owl-carousel">
+            <div>
+                <div class="image_holder">
+                    <img class="community_img" src="public/media/communities/orphans.jpg" alt="">
+                </div>
+                <div class="row hidden-xs">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                      We believe - as people who have progressed, it is our prerogative to make sure our  <b>brothers</b>  develop too. On a regular basis
+                      the things such as water, food, hygiene that we take for granted seems a luxury to them. Initiatives such as
+                      getting them jobs, education through distant learning among other have been employed to bridge the gap
+                      between them and the modern society but that is not enough, we have to find ways and innovations of doing
+                      this much better and much faster. Keeping this mission in mind we want the participants at Codeplay’16 with
+                      the help of technology advance this progress and inclusion in the mainstream society.
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="image_holder">
+                    <img class="community_img" src="public/media/communities/students.jpg" alt="">
+                </div>
+                <div class="row hidden-xs">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                      Most talented and contributing individuals have been <b>students</b> at some point in their lives. Education carries
+                      with it the future of the world and it's technology. Every student, no matter in High School or in University,
+                      faces problems that hinder their education. Identifying these problems and coming up with solutions that
+                      take care of them and lessen their negative impact will not only help students as a community, but will help
+                      other professional communities as well, as students branch out into them.
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="image_holder">
+                    <img class="community_img" src="public/media/communities/farmers.jpg" alt="">
+                </div>
+                <div class="row hidden-xs">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                     <b>Farmers</b> in India still use outdated farming methods that do more harm than good. We believe that this is
+                      one community with a lot of scope for development in methods of irrigation, dependence on traditional
+                      crop, crop wastage, etc. Indian agricultural productivity is very less compared to world standards due to use
+                      of obsolete farming technology. Coupled with this, lack of understanding of the need for sustainability in
+                      the poor farming community has made things worse. We bring out all these problems in Codeplay’16 and
+                      ultimately aim to come forth with a product to move our society forward.
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="image_holder">
+                    <img class="community_img" src="public/media/communities/developers.jpg" alt="">
+                </div>
+                <div class="row hidden-xs">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                      As computer users we rely on our daily machines for every task we accomplish. 
+                      They might be as simple as browsing the internet or as complicated as computing nural networks, 
+                      there's always a software solution that gets the job done. Ever wonder where these solutions come from?
+                      There are some who use softwares, others who know what they do but only the elite know exactly how they 
+                      work and what it takes to create extraordinary stuff. The developer community thrives on creative minds 
+                      that work to provide solutions... Or just make cool games.Making the world a better place by typing a 
+                      few lines of code? It's just another day at the office for these guys. 
+They've continued to make life easier since the dawn of technology. They always manage to figure their way out of problems. <b>
+Developers and Designers </b> provide solutions for you. 
+
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="image_holder">
+                    <img class="community_img" src="public/media/communities/military.jpg" alt="">
+                </div>
+                <div class="row hidden-xs">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                      The term "<b>Military</b> Grade" is
+                      now accompanied with the names of some of the most durable, advanced technology ever engineered.
+                      From micro-drones to wearable robots and guided bullets, military equipment has proven to be more
+                      technologically demanding than consumer equipment at times. Soldiers also face a wide range of
+                      problems and disabilities during their time in the army and the heroes of our country deserve to have
+                      them solved. This community boasts an endless number of possibilities for ideas that could change the
+                      way we look at national security and help the brave warriors of the country both on and oӰ the battle-field.
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="image_holder">
+                    <img class="community_img" src="public/media/communities/disabled.jpg" alt="">
+                </div>
+                <div class="row hidden-xs">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                     <b>Differently abled</b> people have
+                      undergone major reforms in the current century, we have incorporated technologies that help us raise the
+                      standard of living and the quality of healthcare.People are riddled with challenges like false drugs, illegitimate
+                      prescriptions. We believe, technology in the future can certainly get us to cure things that might seem to far
+                      today like Post Traumatic Stress Disorder, Autism and other such diseases which are not only linked to one’s
+                      p
+                      physical being but also the mental health. The technology that Stephen Hawking currently has seemed
+                      impossible to achieve in the past.
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 pull-left">
+        <h4>
+          Find out more about our target cases - <br>
+        </h4>
+        <br>
+        <br>
+
+          <a href="/communities"> <button>Problem Statements</button> </a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section id="schedule">
+    <div class="schedule-bg">
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 text-right">
+          <h2 class=" schedule-title">Schedule</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-sm-6 pull-left">
+          <div id="timeline1" class="timeline-container">
+            <div class="timeline-wrapper">
+              <h3 class="timeline-time">Saturday - 23RD APRIL</h3>
+                <br>
+                <dl class="timeline-series">
+                        <dt class="timeline-event" id="event01"><a>08:00 AM – 09:30 AM | Participants arrival.</a></dt>
+                        <dd class="timeline-event-content" id="event01EX">
+                                <p>We have sectioned the arrival on sirname basis - <br>
+                                  <strong>
+                                    A - G : 08:00 AM     <br>
+                                    H - N : 08:20 AM   <br>
+                                    O - Z : 08:40 AM
+                                  </strong>
+                                </p>
+                        </dd>
+
+                        <dt class="timeline-event" id="event02"><a>09:30 AM  – 10:00 AM | Intro to Codeplay. </a></dt>
+                        <dd class="timeline-event-content" id="event02EX">
+                                <p>Elucidate on the idea of the event. Interaction with target communities.</p>
+                        </dd>
+
+                        <dt class="timeline-event" id="event03"><a>10:00 AM - 10:30 AM | Pitching session. </a></dt>
+                        <dd class="timeline-event-content" id="event03EX">
+                                <p>Introduce your ideas to us.</p>
+                        </dd>
+
+                        <dt class="timeline-event" id="event04"><a>10:30 AM – 12:00 PM | Team formation. </a></dt>
+                        <dd class="timeline-event-content" id="event04EX">
+                                <p>Register your teams at Codeplay portal and collaborate on a single platform.</p>
+                        </dd>
+
+                        <dt class="timeline-event" id="event05"><a>12:00 PM – 07:00 PM | Devfest continues. </a></dt>
+                        <dd class="timeline-event-content" id="event05EX">
+                                <p>
+                                  On-call mentors from AngelHack available to all participants. <br>
+                                  <strong>
+                                     12:00 pm  - Brunch <br>
+                                     5:00 pm - Snack Break
+                                  </strong>
+                                </p>
+                        </dd>
+
+                        <dt class="timeline-event" id="event06"><a>07:00 PM – 07:30 PM | Wrap up for the day. </a></dt>
+                        <dd class="timeline-event-content" id="event06EX">
+                                <p>Participants can collaborate from their rooms.
+AngelHack Mentors will be available on-call overnight. </p>
+                        </dd>
+
+                </dl>
+            </div>
+            <br>
+            <br>
+            <h3 style="font-family: PTMono; font-size: 1.2em; letter-spacing: 0.06em;">
+              Kickoff the over-night collaboration <br> via Codeplay online portal.
+              
+            </h3>
+            <div class="timeline-wrapper">
+                <h3 class="timeline-time">Sunday - 24TH APRIL</h3>
+                <dl class="timeline-series">
+                  <dt class="timeline-event" id="event12"><a>08:00 AM – 03:00 AM | Codeplay continues.</a></dt>
+                  <dd class="timeline-event-content" id="event12EX">
+                    <p>
+                      <strong>
+                         12:00 PM  - Brunch <br>
+                         3:00 PM - Wrap up the projects for presentations.
+                      </strong>
+
+                    </p>
+                  </dd>
+
+                  <dt class="timeline-event" id="event07"><a>03:00 PM  – 05:00 PM | Presentations. </a></dt>
+                  <dd class="timeline-event-content" id="event07EX">
+                          <p>Each presentation must be no longer than 5 minutes.
+                           Each presentation to be followed by 1 minute of Q&A with the judges. </p>
+                  </dd>
+
+                  <dt class="timeline-event" id="event08"><a>05:00 PM - 05:30 PM | Break. </a></dt>
+                  <dd class="timeline-event-content" id="event08EX">
+                          <p>Snacks will be provided! Feast yourselves.</p>
+                  </dd>
+
+                  <dt class="timeline-event" id="event09"><a>05:30 PM – 06:30 PM | Top five presentations. </a></dt>
+                  <dd class="timeline-event-content" id="event09EX">
+                          <p>The best five teams enter the final round. Final presentaions are made.</p>
+                  </dd>
+
+                  <dt class="timeline-event" id="event10"><a>06:30 PM – 07:30 PM | Closing Ceremony. </a></dt>
+                  <dd class="timeline-event-content" id="event10EX">
+                          <p>
+                            Valedictory Function. <br>
+                            Winners announced. <br>
+                            Distribution of Certificates.
+                          </p>
+                  </dd>
+
+                </dl>
+            </div>
+          </div>
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="cp15">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+          <h2 class=" cp15-title">Our previous  &nbsp;&nbsp;years</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-0 col-sm-6 cp15_gallery">
+          <div class="row no-gutter">
+            <div class="col-sm-6 col-lg-6">
+              <img class="img-responsive gfilter" src="public/media/cp15/lb0.jpg" alt="">
+            </div>
+            <div class="col-sm-6 col-lg-6">
+              <img class="img-responsive gfilter" src="public/media/cp15/lb1.jpg" alt="">
+            </div>
+          </div>
+          <div class="row no-gutter">
+            <div class="col-sm-6 col-lg-6">
+              <img class="img-responsive gfilter" src="public/media/cp15/lb2.png" alt="">
+            </div>
+            <div class="col-sm-6 col-lg-6">
+              <img class="img-responsive gfilter" src="public/media/cp15/lb3.png" alt="">
+            </div>
+          </div>
+          </div>
+
+
+        <div class="col-xs-12 col-sm-6 pull-right text-center feedback">
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                  <p>Brilliant Experience! I never thought I'll learn so much in 24hrs. </p>
+
+              </div>
+
+              <div class="item">
+                  <p>It was my first Hack. Am so happy! Got so much to learn.</p>
+
+              </div>
+
+              <div class="item">
+                  <p>Well arranged. Loved the ambience. Food was satiating.</p>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="sponsors">
+    <div class="container">
+      <div class="row sponsor-title ">
+        <div class="col-xs-10 col-xs-offset-1 text-center">
+          <h2>Our tie-ups</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 padding">
+          <img class="img-responsive vcenter" src="public/media/sponsors/vit.png" alt="">
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 padding">
+          <img class="img-responsive vcenter" src="public/media/sponsors/AngelHack.png" alt="">
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 padding">
+          <img class="img-responsive vcenter" src="public/media/sponsors/DoubleThrishul.png" alt="">
+        </div>
+      </row>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 padding">
+          <img class="img-responsive vcenter" src="public/media/sponsors/ClubCubana.png" alt="">
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 padding">
+          <img class="img-responsive vcenter" src="public/media/sponsors/CSIOfficial.png" alt="">
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 padding">
+          <img class="img-responsive vcenter" src="public/media/sponsors/Nirma.png" alt="">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 text-center">
+          <h2>Wish to contribute?</h2>
+          
+            <a href="mailto:info@csivit.com?Subject=Regarding%20Sponsorships">
+             <button>Get in touch!</button> 
+              </a>
+         
+        </div>
+      </div>
+    </div>
+    <div class="conatiner">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="location">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="hidden-xs col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 text-center">
+  	    	<div id="map"></div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 text-center location-text">
+          <h2>There are plenty of ways to reach Vellore.</h2>
+          <h3>Start planning your trip now!</h3>
+          <br>
+          <h4>
+            Tweet us your location <a href="#">@csivitu</a>
+          </h4>
+          <h4>We'll get in touch.</h4>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="register">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 text-center register-frame">
+          <h3>
+          Register for the Devfest and we'll make sure that you have the best 24hrs there could be.
+          <br>
+          <br>
+          We provide you with free WiFi, lots of food, prizes and a chance to cordially contribute to our society.
+          We'll send you your <u>Developer's Pass</u> if you qualify. <br>  <br>
+          <span style="font-size: 0.6em;letter-spacing:0.04em">[ Use your vit mail ID to register ]</span>
+          <br>
+          </h3>
+          <p></p>
+
+            <a href="/register">
+            <button>Register</button>
+            </a>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <h2>
+            FREQUENTLY ASKED QUESTIONS -
+          </h2>
+        </div>
+      </div>
+      <br>
+      <br>
+      <div class="row faq_row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 faq_col">
+          <h3>How is Codeplay different from a other development fests?</h3>
+          <p>
+            Codeplay is Humanity. A community Devfest that embraces designers, developers, entrepreneurs,
+            thinkers, doers and anyone who has the potential to create something brilliant.
+          </p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 faq_col">
+          <h3>How much do I need to pay to register? Do I pay in cash or credit?</h3>
+          <p>
+            We want you to create priceless experiences. Therefore, we don't charge you any cash. The 24hr
+            Devfest is completely free. We provide you with free WiFi, food and a lot more.
+          </p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 faq_col">
+          <h3>What is the maximum number of people allowed in a team? </h3>
+          <p>
+            A maximum of 5 people per team. Don't have team-mates? We got you covered! We provide you with
+            chat rooms on slack. Details to join are mentioned in the above section. Just hit Register!
+          </p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 faq_col">
+          <h3>How do I know I have been short-listed for the hack?</h3>
+          <p>
+            Register your project idea on this website. We'll review it and send you a mail with your Developer's
+            Pass. Please bring a copy of this ticket with you when you come for the hack.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 faq_col">
+          <h3>What if my partner was waitlisted but I wasn’t?</h3>
+          <p>
+            The selected teams are those who have passed the filtered process. However, there is a slight chance
+            of prioritizing individual talent. So give the registration form your best. For such cases, do contact us.
+          </p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 faq_col">
+          <h3>What if I can’t attend after all?</h3>
+          <p>
+            If your spot has been confirmed by us but you can no longer attend, please contact us right away so that we
+            can give your spot to someone who’s waitlisted. We would appreciate your efforts!
+          </p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 faq_col">
+          <h3>How do I check in upon arrival? </h3>
+          <p>
+            The selected members are sent their respective DevTickets, which has a unique code for each individual Please
+            bring this ticket to the fest and you are good! You can also bring your favourite pillow but don't forget the ticket.
+          </p>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 faq_col">
+          <h3>What if I have another question?</h3>
+          <p>
+            Tweet us - <u> <a href="https://twitter.com/csivitu" class="social_links">@csivitu</a></u> <br>
+            Submit it via  <u> <a href="#doubt" class="social_links">Get in touch</a></u> section on this page. <br>
+            Reach us via Facebook - <u> <a href="https://www.facebook.com/csivit/?fref=ts" class="social_links">fb/csicodeplay</a></u> <br>
+            Mail us - <u><a href="mailto:info@csivit.com?Subject=Regarding%20Sponsorships">info@csivit.com</a></u>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="doubt">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 text-center">
+          <form id="contact" action="/doubt" method="post">
+            <h3>Have a doubt?</h3>
+            <h4>We got you covered! Just send us a mail.</h4>
+            <br>
+            <br>
+            <br>
+            <fieldset>
+              <input placeholder="Your Name" type="text" name="name" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Your E-mail Address" type="email" name="email">
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Your Message." name="msg"></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="footer-holder">
+    <footer class="foot">
+      <div class="container">
+        <div class="row padding">
+          <div class="col-xs-12 col-sm-6 col-sm-offset-0 ">
+            <ul class="pull-left">
+              <li>
+                <a  href="https://csivit.com">About us</a>
+              </li>
+              <li>
+                <a href="#top">Scroll to top</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-sm-offset-0">
+              <img class="img-responsive  pull-right" src="public/media/csi_typeface.png" alt="">
+          </div>
+        </div>
+        <div class="row copyright">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-12 col-sm-offset-0 text-center ">
+            <br><p style="padding-top:20px;padding-bottom:10px;color:#aaa;">&copy 2016. All Rights Reserved. | Computer Society of India - VIT University.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </section>
+
+
+  <!-- inject:js -->
+  <script src="public/scripts/lib/jquery/dist/jquery.js"></script>
+  <script src="public/scripts/lib/bootstrap/dist/js/bootstrap.js"></script>
+  <!-- endinject -->
+
+
+  <script src="public/scripts/lib/timeliner/timeliner1.js"></script>
+  <script src="public/scripts/lib/owl-carousel/owl.carousel.js"></script>
+  <script src="public/scripts/scripts_min/main.js"></script>
+
+  		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+
+  		<script type="text/javascript">
+  			window.marker = null;
+
+  			function initialize() {
+  				var map;
+
+  				var vituni = new google.maps.LatLng(12.9738695,79.1590862);
+
+  				var style = [
+  					{ "featureType": "road",
+  					   "elementType":
+  					   "labels.icon",
+  					   "stylers": [
+  						  { "saturation": 1 },
+  						  { "gamma": 1 },
+  						  { "visibility": "on" },
+  						  { "hue": "#fdc398" }
+  					   ]
+  					},
+  					{ "elementType": "geometry", "stylers": [
+  						{ "saturation": -100 }
+  					  ]
+  					}
+  				];
+
+  				var mapOptions = {
+  					// SET THE CENTER
+  					center: vituni,
+
+  					// SET THE MAP STYLE & ZOOM LEVEL
+  					mapTypeId: google.maps.MapTypeId.ROADMAP,
+  					zoom:15,
+
+  					// SET THE BACKGROUND COLOUR
+  					backgroundColor:"#eeeeee",
+
+  					// REMOVE ALL THE CONTROLS EXCEPT ZOOM
+  					panControl:true,
+  					zoomControl:true,
+  					mapTypeControl:false,
+  					scaleControl:false,
+  					streetViewControl:true,
+  					overviewMapControl:true,
+  					zoomControlOptions: {
+  						style:google.maps.ZoomControlStyle.SMALL
+  					}
+
+  				}
+  				map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+  				// SET THE MAP TYPE
+  				var mapType = new google.maps.StyledMapType(style, {name:"Grayscale"});
+  				map.mapTypes.set('grey', mapType);
+  				map.setMapTypeId('grey');
+
+  				//CREATE A CUSTOM PIN ICON
+  				var marker_image ='public/media/pin.png';
+  				var pinIcon = new google.maps.MarkerImage(marker_image,null,null, null,new google.maps.Size(21, 34));
+
+  				marker = new google.maps.Marker({
+  				  position: vituni,
+  				  map: map,
+  				  icon: pinIcon,
+  				  title: 'VIT University, Vellore'
+  				});
+  			}
+
+  			google.maps.event.addDomListener(window, 'load', initialize);
+  		</script>
+      <script src="public/scripts/lib/toastr/toastr.min.js"></script>
+      <script>
+      <% if(err && err!=""){ %>
+        setTimeout(function(){
+          toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "0",
+            "hideDuration": "1000",
+            "timeOut": "0",
+            "extendedTimeOut": "0",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+          }
+          toastr.error("<%- err %>");
+        },100);
+      <% } %>
+      <% if(suc && suc!=""){ %>
+        setTimeout(function(){
+          toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "0",
+            "hideDuration": "1000",
+            "timeOut": "0",
+            "extendedTimeOut": "0",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+          }
+          toastr.success("<%- suc %>");
+        },100);
+      <% } %>
+      </script>
+          <script>
+            var audio = document.getElementById('bg_music');
+        
+            document.getElementById('mute').addEventListener('click', function (e)
+            {
+                e = e || window.event;
+                audio.muted = !audio.muted;
+                e.preventDefault();
+            }, false);
+          </script>
+</body>
+</html>

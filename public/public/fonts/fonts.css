@@ -1,0 +1,52 @@
+/*==========Museo===========*/
+@font-face{
+  font-family: Museo100;
+  src: url("../fonts/Museo/Museo-100.otf");
+}
+
+@font-face{
+  font-family: Museo300;
+  src: url("../fonts/Museo/Museo-300.otf");
+}
+
+
+/*==========Source Code Pro===========*/
+@font-face{
+  font-family: SourceCodePro100;
+  src: url("../fonts/SourceCodePro/SourceCodePro-100.otf");
+}
+
+@font-face{
+  font-family: SourceCodePro200;
+  src: url("../fonts/SourceCodePro/SourceCodePro-200.otf");
+}
+
+@font-face{
+  font-family: SourceCodePro300;
+  src: url("../fonts/SourceCodePro/SourceCodePro-300.otf");
+}
+
+@font-face{
+  font-family: SourceCodePro400;
+  src: url("../fonts/SourceCodePro/SourceCodePro-400.otf");
+}
+
+
+/*==========PTMono===========*/
+@font-face{
+  font-family: PTMono;
+  src: url("../fonts/PT/PTMono.ttf");
+}
+
+
+/*==========PTMono===========*/
+@font-face{
+  font-family: CourierNew;
+  src: url("../fonts/CourierNew/courier.ttf");
+}
+
+/*==========Antic Slab===========*/
+@font-face{
+  font-family: AnticSlab;
+  src: url("../fonts/AnticSlab/AnticSlab-Regular.ttf");
+}

@@ -1,0 +1,228 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CODEPLAY - Target Communities</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" type="image/x-icon" href="public/media/cp.ico"/>
+  <!--fonts-->
+  <link href="public/fonts/fonts.css" rel="stylesheet" type="text/css"></link>
+  <link href="public/scripts/lib/owl-carousel/owl.carousel.css" rel="stylesheet"></link>
+  <!-- inject:css -->
+  <link href="public/scripts/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+  <link href="public/scripts/lib/animate.css/animate.min.css" rel="stylesheet" type="text/css"></link>
+  <link href="public/scripts/lib/font-awesome/css/font-awesome.css" rel="stylesheet"></link>
+  <link href="public/scripts/lib/normalize-css/normalize.css" rel="stylesheet" type="text/css"></link>
+  <link href="public/scripts/lib/toastr/toastr.min.css" rel="stylesheet" type="text/css"></link>
+  <!-- endinject -->
+
+  <link href="public/stylesheets/main.css" rel="stylesheet" type="text/css"></link>
+
+  <style>
+
+
+.bg{
+  background: url('public/media/video_bg.png');
+  background-origin: border-box;
+   background-size: cover;
+   background-position: center;
+   background-repeat: repeat;
+
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+ }
+
+  h1 {
+      margin: 0;
+      font-size: 24px;
+  }
+
+  #statements .title{
+    z-index: -200;
+    color: #fff;
+    padding-bottom: 20px;
+    position: absolute;
+    z-index: 2;
+    padding: 0;
+    text-transform: none;
+    position: absolute;
+    top: 40px;
+    font-family: AnticSlab;
+  }
+
+
+.bracket{
+  color: #fff;
+  padding: 0;
+}
+
+.menu a{
+  transition: all 0.4s ease-in-out;
+  box-shadow: none;
+}
+
+.menu{
+  transition: all 0.1s ease;
+}
+
+.menu:nth-child(1):hover{
+  letter-spacing: 0.1em;
+}
+
+input{
+  background: red;
+}
+#doubt{
+  padding-top: 80px;
+}
+header .menu{
+  top: 120px;
+}
+
+  </style>
+
+</head>
+<body class="bg">
+
+  <header>
+    <div class="moving_humanity">
+      <a href="#">moving humanity</a>
+    </div>
+    <div class="menu" style="letter-spacing: 0.1em">
+
+      <a href="/">
+[home]
+      </a>
+      <a href="/logout">
+[logout] <!--Fix the css -->
+      </a>
+    </div>
+  </header>
+  <section id="statements">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 heading text-left">
+          <h2 class="title">
+      
+          
+            <h4 style="padding-top:20px;color:#fff">
+              <b style="font-size: 2em;">Register with us!</b>
+              Every team member needs to register.
+              <br>
+              Once you fill the given fields, <br> click submit.</h4>
+            </h2>
+        </div>
+      </div>
+
+      <div id="doubt" class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1">
+          <form id="contact" action="/updateProfile" method="post">
+
+
+            <br>
+            <br>
+            <br>
+            <fieldset>
+              <input placeholder="Enter your Name" type="text" name="name" value="<%= user.name %>">
+            </fieldset>
+            <fieldset>
+              <input placeholder="Enter your registration No." type="text" name="regNo" value="<%= user.regNo %>">
+            </fieldset>
+            <fieldset>
+              <input placeholder="Enter your email." type="email" name="email" value="<%= user.email %>" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Enter your 10-digit contact number" type="tel" name="phone" value="<%= user.phone %>" required>
+            </fieldset>
+            <fieldset>
+              <input placeholder="Number of team members (if you are participating in a team)." type="number" name="teamMembers" value="<%= user.teamMembers %>">
+            </fieldset>
+            <fieldset>
+              <label style="color:#ff966c;"for="communities-select">Select community:</label>
+                <select name="community" id="communities-select" value="<%=user.community%>">
+                  <option>Orphans</option>
+                  <option>Military</option>
+                  <option>Students</option>
+                  <option>Developers</option>
+                  <option>Disabled</option>
+                  <option>Farmers</option>
+                </select>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Enter your project idea." name="idea" maxlength="120" required><%= user.project_idea %></textarea>
+            </fieldset>
+            <fieldset>
+              <textarea placeholder="Enter your skill-set - <RESEARCH> / <ANDROID> / <MARKETING> / <IOS> / <WEB> / <ENTREPRENEURSHIP> / <DESIGN> " name="skills" required><%= user.skills %></textarea>
+            </fieldset>
+            <fieldset>
+              <button name="submit" type="submit" id="registeration" data-submit="...Sending">Submit</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <script src="public/scripts/lib/jquery/dist/jquery.js"></script>
+    <script src="public/scripts/lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="public/scripts/lib/timeliner/timeliner1.js"></script>
+    <script src="public/scripts/scripts_min/main.js"></script>
+    <script src="public/scripts/lib/owl-carousel/owl.carousel.js"></script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
+        // move navContainer outside the primary owl wrapper
+        nav:true,
+      //  navContainer: '#customNav'
+        // move dotsContainer outside the primary owl wrapper
+
+    })
+    $(document).ready(function(){
+        $('a .menu1').each(function() {
+            animationHover(this, 'bounce');
+        });
+    });
+
+
+    </script>
+    <script src="public/scripts/lib/toastr/toastr.min.js"></script>
+    <script>
+    <% if(err && err!=""){ %>
+      setTimeout(function(){
+        toastr.options = {
+          "closeButton": true,
+          "debug": false,
+          "newestOnTop": false,
+          "progressBar": false,
+          "positionClass": "toast-top-right",
+          "preventDuplicates": false,
+          "onclick": null,
+          "showDuration": "0",
+          "hideDuration": "1000",
+          "timeOut": "0",
+          "extendedTimeOut": "0",
+          "showEasing": "swing",
+          "hideEasing": "linear",
+          "showMethod": "fadeIn",
+          "hideMethod": "fadeOut"
+        }
+        toastr.error("<%- err %>");
+      },100);
+    <% } %>
+    </script>
+</body>
+</html>

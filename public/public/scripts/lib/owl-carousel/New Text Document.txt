@@ -1,0 +1,128 @@
+
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                      Differently abled people have
+                      undergone major reforms in the current century, we have incorporated technologies that help us raise the
+                      standard of living and the quality of healthcare.People are riddled with challenges like false drugs, illegitimate
+                      prescriptions. We believe, technology in the future can certainly get us to cure things that might seem to far
+                      today like Post Traumatic Stress Disorder, Autism and other such diseases which are not only linked to one’s
+                      p
+                      physical being but also the mental health. The technology that Stephen Hawking currently has seemed
+                      impossible to achieve in the past
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="video_holder">
+                  <div data-video="dNmpoj2Izwc" id="video">
+                    <img class="community_img" src="public/media/communities/military.jpg" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                      Differently abled people have
+                      undergone major reforms in the current century, we have incorporated technologies that help us raise the
+                      standard of living and the quality of healthcare.People are riddled with challenges like false drugs, illegitimate
+                      prescriptions. We believe, technology in the future can certainly get us to cure things that might seem to far
+                      today like Post Traumatic Stress Disorder, Autism and other such diseases which are not only linked to one’s
+                      p
+                      physical being but also the mental health. The technology that Stephen Hawking currently has seemed
+                      impossible to achieve in the past
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="video_holder">
+                  <a class="item" href="http://www.youtube.com/watch?v=T-D1KVIuvjA" rel="prettyPhoto" title="Here is your video">
+          <img class="community_img" src="public/media/communities/disabled.jpg" alt="">
+    </a>
+
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                      Differently abled people have
+                      undergone major reforms in the current century, we have incorporated technologies that help us raise the
+                      standard of living and the quality of healthcare.People are riddled with challenges like false drugs, illegitimate
+                      prescriptions. We believe, technology in the future can certainly get us to cure things that might seem to far
+                      today like Post Traumatic Stress Disorder, Autism and other such diseases which are not only linked to one’s
+                      p
+                      physical being but also the mental health. The technology that Stephen Hawking currently has seemed
+                      impossible to achieve in the past
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="video_holder">
+                  <div data-video="dNmpoj2Izwc" id="video">
+                    <img class="community_img" src="public/media/communities/developers.jpg" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                      Differently abled people have
+                      undergone major reforms in the current century, we have incorporated technologies that help us raise the
+                      standard of living and the quality of healthcare.People are riddled with challenges like false drugs, illegitimate
+                      prescriptions. We believe, technology in the future can certainly get us to cure things that might seem to far
+                      today like Post Traumatic Stress Disorder, Autism and other such diseases which are not only linked to one’s
+                      p
+                      physical being but also the mental health. The technology that Stephen Hawking currently has seemed
+                      impossible to achieve in the past
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="video_holder">
+                  <div data-video="dNmpoj2Izwc" id="video1">
+                    <img class="community_img" src="public/media/communities/farmers.jpg" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                      Differently abled people have
+                      undergone major reforms in the current century, we have incorporated technologies that help us raise the
+                      standard of living and the quality of healthcare.People are riddled with challenges like false drugs, illegitimate
+                      prescriptions. We believe, technology in the future can certainly get us to cure things that might seem to far
+                      today like Post Traumatic Stress Disorder, Autism and other such diseases which are not only linked to one’s
+                      p
+                      physical being but also the mental health. The technology that Stephen Hawking currently has seemed
+                      impossible to achieve in the past
+                    </p>
+                  </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="video_holder">
+                  <div data-video="HWvzhfI4SuM" id="video">
+                    <img class="community_img" src="public/media/communities/students.jpg" alt="">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-6 pull-right community_text">
+                    <p>
+                      Differently abled people have
+                      undergone major reforms in the current century, we have incorporated technologies that help us raise the
+                      standard of living and the quality of healthcare.People are riddled with challenges like false drugs, illegitimate
+                      prescriptions. We believe, technology in the future can certainly get us to cure things that might seem to far
+                      today like Post Traumatic Stress Disorder, Autism and other such diseases which are not only linked to one’s
+                      p
+                      physical being but also the mental health. The technology that Stephen Hawking currently has seemed
+                      impossible to achieve in the past
+                    </p>
+                  </div>
+                </div>
+            </div>

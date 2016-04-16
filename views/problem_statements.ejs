@@ -1,0 +1,208 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>CODEPLAY - Target Communities</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="shortcut icon" type="image/x-icon" href="public/media/cp.ico"/>
+  <!--fonts-->
+  <link href="public/fonts/fonts.css" rel="stylesheet" type="text/css"></link>
+  <link href="public/scripts/lib/owl-carousel/owl.carousel.css" rel="stylesheet"></link>
+  <!-- inject:css -->
+  <link href="public/scripts/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+  <link href="public/scripts/lib/animate.css/animate.min.css" rel="stylesheet" type="text/css"></link>
+  <link href="public/scripts/lib/font-awesome/css/font-awesome.css" rel="stylesheet"></link>
+  <link href="public/scripts/lib/normalize-css/normalize.css" rel="stylesheet" type="text/css"></link>
+  <!-- endinject -->
+
+  <link href="public/stylesheets/main.css" rel="stylesheet" type="text/css"></link>
+
+  <style>
+
+
+.bg{
+  background: url('public/media/video_bg.png');
+  background-origin: border-box;
+   background-size: cover;
+   background-position: center;
+   background-repeat: repeat;
+
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+ }
+
+  #customNav{
+      padding: 5px;
+  }
+
+  h1 {
+      margin: 0;
+      font-size: 24px;
+  }
+
+  .customNav {
+      margin: 0;
+      font-size: 1em! important;
+  }
+
+  #statements .title{
+    color: #fff;
+    padding-bottom: 20px;
+    position: absolute;
+    z-index: 2;
+    padding: 0;
+    text-transform: none;
+    position: absolute;
+    top: 40px;
+    font-family: AnticSlab;
+  }
+
+  .owl-prev{
+    color: #fff;
+    width: 80px;
+    position: absolute;
+    left: 10px;
+    cursor: pointer;
+    bottom: 60px;
+  }
+
+  .owl-next{
+    width: 80px;
+    color: #fff;
+    text-align: right;
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    bottom: 60px;
+  }
+
+.owl-carousel .owl-video-wrapper{
+  background: transparent;
+}
+.owl-carousel .owl-video-play-icon{
+  background-position: center;
+}
+
+.owl-carousel .owl-item .owl-lazy{
+  opacity: 0.6;
+  filter: grayscale(90%);
+  -webkit-filter: grayscale(90%);
+  filter: gray;
+  -webkit-transition: all 0.2s ease-in;
+}
+
+.owl-carousel:hover .owl-item:hover .owl-lazy:hover {
+  opacity: 1;
+  filter: grayscale(5%);
+  -webkit-filter: grayscale(5%);
+  filter: none;
+  cursor: crosshair;
+}
+
+.bracket{
+  color: #fff;
+  padding: 0;
+}
+
+.menu a{
+  transition: all 0.4s ease-in-out;
+  box-shadow: none;
+}
+
+.menu{
+  transition: all 0.1s ease;
+}
+
+.menu:hover{
+  letter-spacing: 0.35em;
+}
+
+
+  </style>
+
+</head>
+<body class="bg">
+
+  <header>
+    <div class="moving_humanity">
+      <a href="#">moving humanity</a>
+    </div>
+    <div class="menu">
+
+      <a href="/">
+[home]
+      </a>
+
+    </div>
+  </header>
+  <section id="statements">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 heading text-left">
+          <h2 class="title">
+            Our Target
+            <br>
+            Communities
+          </h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-10 col-md-offset-1">
+
+            <div class="owl-carousel">
+              <div class="item-video" data-merge="1"><a class="owl-video" href="https://youtu.be/u4UOzXLIDTk"></a></div>
+              <div class="item-video" data-merge="2"><a class="owl-video" href="https://youtu.be/O0G6Z6yWiHo"></a></div>
+              <div class="item-video" data-merge="1"><a class="owl-video" href="https://youtu.be/BKiubjFT5ZI"></a></div>
+              <div class="item-video" data-merge="2"><a class="owl-video" href="https://youtu.be/b8xT8Oa0jUA"></a></div>
+              <div class="item-video" data-merge="3"><a class="owl-video" href="https://youtu.be/Oo5pwXO5tLY"></a></div>
+              <div class="item-video" data-merge="1"><a class="owl-video" href="https://youtu.be/QPO4UgB2xx8"></a></div>
+            </div>
+            <div class="owl-theme">
+                <div class="owl-controls">
+                    <div id="customNav" class="owl-nav"></div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+    <script src="public/scripts/lib/jquery/dist/jquery.js"></script>
+    <script src="public/scripts/lib/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="public/scripts/lib/timeliner/timeliner1.js"></script>
+    <script src="public/scripts/scripts_min/main.js"></script>
+    <script src="public/scripts/lib/owl-carousel/owl.carousel.js"></script>
+    <script>
+    $('.owl-carousel').owlCarousel({
+        items:1,
+        merge:true,
+        loop:true,
+        margin:10,
+        video:true,
+        lazyLoad:true,
+        center:true,
+        // move navContainer outside the primary owl wrapper
+        nav:true,
+      //  navContainer: '#customNav'
+        // move dotsContainer outside the primary owl wrapper
+
+    })
+    $(document).ready(function(){
+        $('a .menu1').each(function() {
+            animationHover(this, 'bounce');
+        });
+    });
+
+
+    </script>
+</body>
+</html>
