@@ -8,7 +8,7 @@ var passport = require("passport");
 var flash = require("connect-flash");
 var expressSession = require("express-session");
 var mongoose = require('mongoose');
-
+const MongoStore = require('connect-mongo')(expressSession);
 require("./app/config/passport")(passport);
 
 var index = require('./app/routes/index')(passport);
@@ -31,7 +31,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(expressSession({secret:'mysecrerdcdsgfdgsndsjfnkjdsnfjnsdi'}));
+app.use(expressSession({secret:'mysecrerdcdsgfdgsndsjfnkjdsnfjnsdi',
+  resave: false,
+  saveUninitialized: true,
+  store : new MongoStore({ mongooseConnection: mongoose.connection }),
+  cookie: { secure: true }
+}));
 app.use(flash());
 app.use(passport.initialize());
 app.use(passport.session());
