@@ -4,10 +4,12 @@ var mail_send = require("../util/email.js");
 
 module.exports = function(passport){
     router.get('/', function(req, res, next) {
-        res.locals.err = req.flash("err");
-        res.locals.suc = req.flash("msg");
-        console.log(res.locals.err);
-        res.render('index');
+        var error = req.flash("err");
+        var message = req.flash("msg");
+        
+        console.log(error);
+        console.log(message);
+        res.render('index',{err : error , suc : message});
     });
     router.get('/communities',function(req, res, next){
       res.render('problem_statements');

@@ -63,8 +63,8 @@ module.exports = function(passport){
   });
 
   router.get('/profile',ic.isLoggedIn,function(req,res){
-    res.locals.err = req.flash('err');
-    res.render('profile');
+    var error = req.flash('err');
+    res.render('profile', {err : error});
   });
 
   router.post('/updateProfile',ic.isLoggedIn,function(req,res){
