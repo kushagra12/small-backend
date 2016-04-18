@@ -29,6 +29,27 @@
   <!-- endinject -->
 
   <link href="public/stylesheets/main.css" rel="stylesheet" type="text/css">
+  <style>
+      .owl-prev{
+    color: #1a1a1a;
+    width: 80px;
+    position: relative;
+    left: 10px;
+    cursor: pointer;
+    bottom: 40px;
+    
+  }
+
+  .owl-next{
+    width: 80px;
+    color: #1a1a1a;
+    text-align: right;
+    position: relative;
+    right: -100px;
+    cursor: pointer;
+    bottom: 40px;
+  }
+  </style>
   <script src="public/scripts/lib/tweenmax/TweenMax.min.js"></script>
 </head>
 <body>
@@ -323,6 +344,11 @@ Developers and Designers </b> provide solutions for you.
             </div>
 
           </div>
+            <div class="owl-theme">
+                <div class="owl-controls">
+                    <div id="customNav" class="owl-nav"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -623,7 +649,7 @@ AngelHack Mentors will be available on-call overnight. </p>
       <br>
       <div class="row faq_row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0 faq_col">
-          <h3>How is Codeplay different from a other development fests?</h3>
+          <h3>How is Codeplay different from other development fests?</h3>
           <p>
             Codeplay is Humanity. A community Devfest that embraces designers, developers, entrepreneurs,
             thinkers, doers and anyone who has the potential to create something brilliant.

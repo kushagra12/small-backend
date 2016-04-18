@@ -22,10 +22,6 @@ module.exports = function(passport) {
         },
         function(req,token, refreshToken, profile, done) {
             process.nextTick(function() {
-                if(!profile.emails[0].value.toLowerCase().endsWith("@vit.ac.in")){
-                  console.log("Sign in using vit.ac.in accounts");
-                    return done(null,false,req.flash("err" , "Sign in using vit.ac.in accounts. Click <a target='new' href='https://accounts.google.com/logout'>here</a> to logout from google."));
-                }
                 User.findOne({ 'google.id' : profile.id }, function(err, user) {
                 console.log(profile);
                     if(err)
