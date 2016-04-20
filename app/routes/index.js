@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mail_send = require("../util/email.js");
+var User = require("../models/user.js");
 
 module.exports = function(passport){
     router.get('/', function(req, res, next) {
@@ -13,6 +14,12 @@ module.exports = function(passport){
     });
     router.get('/communities',function(req, res, next){
       res.render('problem_statements');
+    });
+    
+    router.get('/kewl-feature', function(req, res, next) {
+        User.count({}, function(err, c) {
+           res.send('Count is ' + c);
+      });
     });
 
     router.post("/doubt", function(req,res,next){
