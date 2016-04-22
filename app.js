@@ -13,6 +13,7 @@ require("./app/config/passport")(passport);
 
 var index = require('./app/routes/index')(passport);
 var users = require('./app/routes/users')(passport);
+var ticket = require('./app/routes/ticket')(passport);
 var auth  = require('./app/routes/auth')(passport);
 
 
@@ -43,6 +44,7 @@ app.use(passport.session());
 app.use('/', index.router);
 app.use('/', users.router);
 app.use('/', auth.router);
+app.use('/ticket', ticket.router);
 
 app.set('json spaces', 4);
 

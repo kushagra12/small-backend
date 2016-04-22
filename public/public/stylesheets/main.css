@@ -539,31 +539,31 @@ header {
   background-repeat: no-repeat;
   background-size: cover; }
   #register .register-frame {
-    height: 70%;
+    height: 100%;
     border: 10px #1a1a1a solid;
     background: rgba(255, 255, 255, 0.6); }
     #register .register-frame h3 {
       padding: 40px 20px 40px 10px;
       position: absolute;
-      top: 20%;
+      top: 10%;
       font-family: PTMono;
       color: #1a1a1a;
       letter-spacing: 0.15em;
       text-rendering: optimizeLegibility;
       font-kerning: normal;
       letter-spacing: 0.06em;
-      font-size: 1.2em; }
+      font-size: 0.9em; }
     #register .register-frame button {
       position: absolute;
       right: 34%;
-      bottom: 50px;
+      bottom: 20px;
       background: #ffffff;
       color: #1a1a1a;
       border: 1px solid #1a1a1a;
       text-align: center;
       width: 180px;
-      height: 50px;
-      line-height: 40px;
+      height: 45px;
+      line-height: 35px;
       cursor: pointer;
       transition: all .2s ease-in; }
       #register .register-frame button:hover {

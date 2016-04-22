@@ -3,6 +3,7 @@ var router = express.Router();
 var User = require('../models/user');
 var ic = require("../interceptor.js");
 var Team = require("../models/team");
+var generator_mail = require("../util/ticket-gen.js");
 
 module.exports = function(passport){
   // router.get('/users', function(req, res, next) {
@@ -68,6 +69,10 @@ module.exports = function(passport){
   });
 
   router.post('/updateProfile',ic.isLoggedIn,function(req,res){
+    var flag = false;
+    if (req.user.regNo == undefined){
+      flag = true;
+    }
     var phone = req.body.phone || "";
     var tm = req.body.teamMembers || "";
     var skills = req.body.skills || "";
@@ -112,6 +117,9 @@ module.exports = function(passport){
     req.user.save(function(err){
       if(err)return res.sendStatus(500);
       req.flash("msg","Profile successfully updated");
+      if(flag){
+        generator_mail.generate(req.user.regNo,req.user.name,req.user.email);
+      }
       return res.redirect("/");
     });
   });

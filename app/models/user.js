@@ -17,6 +17,7 @@ var userSchema = mongoose.Schema({
         token        : String
     },
     community : String,
-    project_idea : String
+    project_idea : String,
+    registered : {type:Boolean,default:false}
 });
 module.exports = mongoose.model('User', userSchema);
