@@ -20,6 +20,7 @@
     "nodemailer-sendgrid-transport": "^0.2.0",
     "passport": "latest",
     "passport-google-oauth": "latest",
+    "phantom": "^3.2.1",
     "serve-favicon": "~2.3.0"
   }
 }
